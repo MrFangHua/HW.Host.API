@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HW.Host.API.Model</name>
+    </assembly>
+    <members>
+        <member name="T:HW.Host.API.Model.DefaultEntity.HW_Admin">
+            <summary>
+            管理员信息
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.DefaultEntity.HW_Admin.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.DefaultEntity.HW_Admin.AdminName">
+            <summary>
+            管理员账号
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.DefaultEntity.HW_Admin.AdminPwd">
+            <summary>
+            管理员密码
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Model.DefaultEntity.HW_Users">
+            <summary>
+            用户信息
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.DefaultEntity.HW_Users.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.DefaultEntity.HW_Users.UserName">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.DefaultEntity.HW_Users.UserPwd">
+            <summary>
+            用户密码
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Model.Entity">
+            <summary>
+            默认Entity类
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.Entity.IsDeleted">
+            <summary>
+            是否删除 0未删除 1已删除
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.Entity.CreateUserID">
+            <summary>
+            创建用户ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.Entity.CreateAdminID">
+            <summary>
+            创建管理员ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.Entity.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.Entity.LastUpdateTime">
+            <summary>
+            最后一次修改时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.Entity.DeleteTimeAndRemark">
+            <summary>
+            软删除时间于备注
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.LogEntity.HW_Log.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.LogEntity.HW_Log.Date">
+            <summary>
+            日志时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.LogEntity.HW_Log.Thread">
+            <summary>
+            线程ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.LogEntity.HW_Log.Level">
+            <summary>
+            日志级别
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.LogEntity.HW_Log.Logger">
+            <summary>
+            日志对象
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.LogEntity.HW_Log.Message">
+            <summary>
+            日志内容
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.LogEntity.HW_Log.Exception">
+            <summary>
+            异常信息
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.LogEntity.HW_SqlLog.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.LogEntity.HW_SqlLog.Date">
+            <summary>
+            执行时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.LogEntity.HW_SqlLog.Sql">
+            <summary>
+            Sql语句
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_BackGroundImageInfo.BGId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_BackGroundImageInfo.BGUrl">
+            <summary>
+            背景图片URL
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Model.ModelEntity.HW_CopywritingInfo">
+            <summary>
+            文案信息类
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_CopywritingInfo.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_CopywritingInfo.Content">
+            <summary>
+            文案内容
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_EmailHistoryInfo.EHID">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_EmailHistoryInfo.RecipientId">
+            <summary>
+            收件人账号
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_EmailHistoryInfo.EmailBody">
+            <summary>
+            邮件内容
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_EmailHistoryInfo.EmailCode">
+            <summary>
+            邮件验证码
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Model.ModelEntity.HW_GuidePagesMenuInfo">
+            <summary>
+            引导页菜单信息
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_GuidePagesMenuInfo.MenuID">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_GuidePagesMenuInfo.MenuName">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_GuidePagesMenuInfo.MenuUrl">
+            <summary>
+            菜单Url
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_GuidePagesMenuInfo.ParentId">
+            <summary>
+            父级菜单Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_GuidePagesMenuInfo.MenuOrder">
+            <summary>
+            菜单排序
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Model.Model.PageModel`1">
+            <summary>
+            通用分页信息类
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.Model.PageModel`1.page">
+            <summary>
+            当前页标
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.Model.PageModel`1.pageCount">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.Model.PageModel`1.dataCount">
+            <summary>
+            数据总数
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.Model.PageModel`1.pageSize">
+            <summary>
+            每页大小
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.Model.PageModel`1.data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+    </members>
+</doc>

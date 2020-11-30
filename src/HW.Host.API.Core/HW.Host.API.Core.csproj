@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <Authors>Mr.Fang</Authors>
+    <Company>Mr.Fang NetWork</Company>
+    <Description>Mr.Fang wx F132951
+FH.Host.API.Core</Description>
+    <PackageId>FH.Host.API.Core_wx_F132951</PackageId>
+    <Copyright>Mr.Fang</Copyright>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>F:\File\Visual Studio Files\HW.Host.API\src\HW.Host.API.Core\ExegesisXmlFile\HW.Host.API.Core.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="FH.Host.API.Core.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="ExegesisXmlFile\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HW.Host.API.Application\HW.Host.API.Application.csproj" />
+  </ItemGroup>
+
+</Project>

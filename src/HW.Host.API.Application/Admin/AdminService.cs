@@ -1,0 +1,64 @@
+﻿using HW.Host.API.Infrastructure.Authorization.Jwt;
+using HW.Host.API.Infrastructure.Model;
+using HW.Host.API.Infrastructure.SqlSugar;
+using HW.Host.API.Model.DefaultEntity;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace HW.Host.API.Application.Admin
+{
+    /// <summary>
+    /// 管理员服务
+    /// </summary>
+    [ApiExplorerSettings(GroupName = "HW.Host.Admin.API")]
+    [Route("api/[controller]")]
+    [ApiController]
+    [Authorize]
+    public class AdminService
+    {
+        private readonly IOwnerRepository<HW_Admin> _context;
+
+        public AdminService(IOwnerRepository<HW_Admin> repository)
+        {
+            _context = repository;
+        }
+
+        /// <summary>
+        /// 管理员登录
+        /// </summary>
+        /// <param name="adminName">管理员账号</param>
+        /// <param name="adminPwd">管理员密码</param>
+        /// <returns></returns>
+        [HttpPost("AdminLogin")]
+        [AllowAnonymous]
+        public async Task<ResultDto> AdminLogin(string adminName, string adminPwd)
+        {
+            // 判断是否为空
+            if (string.IsNullOrEmpty(adminName) || string.IsNullOrEmpty(adminPwd))
+                // 账号或密码不能为空
+                throw new Exception("Account or password cannot be empty.");
+            var result = await _context
+                .GetFirstOrDefault(a =>
+                a.AdminName.Equals(adminName) &&
+                a.AdminPwd.Equals(adminPwd));
+            if (result != null)
+                return new ResultDto() { ResultInfo = JwtService.GetToken(adminName) };
+            else
+                // 账号或密码错误
+                throw new Exception("Incorrect username or password.");
+        }
+
+        /// <summary>
+        /// 查询所有Admin
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("SellectAll")]
+        public async Task<List<HW_Admin>> SellectAll()
+        {
+            return await _context.GetAll();
+        }
+    }
+}

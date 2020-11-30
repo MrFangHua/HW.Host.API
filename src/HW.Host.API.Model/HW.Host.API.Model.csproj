@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>F:\File\Visual Studio Files\HW.Host.API\src\HW.Host.API.Core\ExegesisXmlFile\HW.Host.API.Model.xml</DocumentationFile>
+    <OutputPath>F:\File\Visual Studio Files\HW.Host.API\src\HW.Host.API.Core\bin\Debug\</OutputPath>
+  </PropertyGroup>
+
+</Project>
