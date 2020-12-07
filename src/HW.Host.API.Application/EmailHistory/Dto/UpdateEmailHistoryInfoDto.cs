@@ -11,7 +11,7 @@ namespace HW.Host.API.Application.EmailHistory.Dto
         /// Id
         /// </summary>
         [Required]
-        public int EHID { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// 邮件内容

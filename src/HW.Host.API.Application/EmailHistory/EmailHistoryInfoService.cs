@@ -70,6 +70,7 @@ namespace HW.Host.API.Application.EmailHistory
         /// <param name="recipientId">收件人账号</param>
         /// <returns></returns>
         [HttpGet("GetLastEmailHistoryInfoByRecipientId")]
+        [AllowAnonymous]
         public async Task<GetLastEmailHistoryInfoByRecipientIdResultDto> GetLastEmailHistoryInfoByRecipientId(string recipientId)
         {
             var emailhistoryInfo = (await _context
@@ -99,7 +100,6 @@ namespace HW.Host.API.Application.EmailHistory
         /// </summary>
         /// <param name="recipientId">收件人账号</param>
         /// <returns></returns>
-        [AllowAnonymous]
         [HttpGet("GetLastEmailHistoryCodeInfoByRecipientId")]
         public async Task<GetLastEmailHistoryCodeInfoByRecipientIdResultDto> GetLastEmailHistoryCodeInfoByRecipientId(string recipientId)
         {
@@ -134,7 +134,7 @@ namespace HW.Host.API.Application.EmailHistory
         /// <param name="isSendEmail">是否发送邮件，默认为发送</param>
         /// <returns></returns>
         [HttpPost("CreateEmailHistoryInfo")]
-        public async Task<ResultDto> CreateEmailHistoryInfo(createEmailHistoryInfoDto createEmailHistoryInfoDto, bool? isSendEmail = true)
+        public async Task<ResultDto> CreateEmailHistoryInfo(createEmailHistoryInfoDto createEmailHistoryInfoDto)
         {
             // 检测邮箱账号为否为QQ邮箱，并且是否正确
             string expression = AppConfigurtaionService.Configuration["EmailServicesStrings:EmailExpression"]; // 拿到配置文件中的正则表达式
@@ -143,13 +143,9 @@ namespace HW.Host.API.Application.EmailHistory
                 // 请输入正确的QQ邮箱账号
                 throw new Exception("Please enter the correct QQ email account.");
             }
-            HW_EmailHistoryInfo emailHistory = new HW_EmailHistoryInfo()
-            {
-                RecipientId = createEmailHistoryInfoDto.RecipientId,
-                EmailBody = createEmailHistoryInfoDto.EmailBody
-            };
+            var emailHistory = ModelBindingService.CopyModel<HW_EmailHistoryInfo, createEmailHistoryInfoDto>(createEmailHistoryInfoDto);
             // 发送QQ邮件
-            if (isSendEmail.Value)
+            if (createEmailHistoryInfoDto.IsSendEmail)
             {
                 emailHistory.EmailBody = _emailServices.SendRandomCodeQQEmail(emailHistory.RecipientId).RecipientBody;
             }
@@ -169,7 +165,7 @@ namespace HW.Host.API.Application.EmailHistory
                 Success = await _context.Update(
                     new HW_EmailHistoryInfo()
                     {
-                        EHID = updateEmailHistoryInfoDto.EHID,
+                        Id = updateEmailHistoryInfoDto.Id,
                         EmailBody = updateEmailHistoryInfoDto.EmailBody
                     })
             };
@@ -188,7 +184,7 @@ namespace HW.Host.API.Application.EmailHistory
                 Success = await _context.Update(
                     new HW_EmailHistoryInfo()
                     {
-                        EHID = ehID,
+                        Id = ehID,
                         IsDeleted = 1
                     })
             };

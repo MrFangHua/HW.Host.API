@@ -14,7 +14,7 @@ namespace HW.Host.API.Application.EmailHistory.Dto
         [Key]
         [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int EHID { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// 收件人账号

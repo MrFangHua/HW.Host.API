@@ -14,5 +14,10 @@
         /// 邮件内容
         /// </summary>
         public string EmailBody { get; set; }
+
+        /// <summary>
+        /// 是否发送邮件，默认为发送
+        /// </summary>
+        public bool IsSendEmail { get; set; } = true;
     }
 }
