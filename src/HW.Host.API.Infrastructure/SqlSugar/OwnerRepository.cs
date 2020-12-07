@@ -537,7 +537,7 @@ namespace HW.Host.API.Infrastructure.SqlSugar
         /// <returns>操作是否成功</returns>
         public async Task<bool> Add(T model)
         {
-            return await _dbBase.Insertable<T>(model).ExecuteCommandAsync() > 0;
+            return await _dbBase.Insertable(model).ExecuteCommandAsync() > 0;
         }
 
         /// <summary>
