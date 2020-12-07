@@ -1,8 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using SqlSugar;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HW.Host.API.Model.ModelEntity
 {
+    /// <summary>
+    /// 邮件历史信息
+    /// </summary>
     public class HW_EmailHistoryInfo : Entity
     {
         /// <summary>
@@ -11,7 +15,8 @@ namespace HW.Host.API.Model.ModelEntity
         [Key]
         [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int EHID { get; set; }
+        [SugarColumn(IsPrimaryKey = true, IsIdentity = true)]
+        public int Id { get; set; }
 
         /// <summary>
         /// 收件人账号
