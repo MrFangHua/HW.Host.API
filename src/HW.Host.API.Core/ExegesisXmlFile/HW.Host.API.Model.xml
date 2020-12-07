@@ -129,7 +129,12 @@
             Sql语句
             </summary>
         </member>
-        <member name="P:HW.Host.API.Model.ModelEntity.HW_BackGroundImageInfo.BGId">
+        <member name="T:HW.Host.API.Model.ModelEntity.HW_BackGroundImageInfo">
+            <summary>
+            背景图片信息
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_BackGroundImageInfo.Id">
             <summary>
             Id
             </summary>
@@ -154,7 +159,12 @@
             文案内容
             </summary>
         </member>
-        <member name="P:HW.Host.API.Model.ModelEntity.HW_EmailHistoryInfo.EHID">
+        <member name="T:HW.Host.API.Model.ModelEntity.HW_EmailHistoryInfo">
+            <summary>
+            邮件历史信息
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_EmailHistoryInfo.Id">
             <summary>
             Id
             </summary>
@@ -179,7 +189,7 @@
             引导页菜单信息
             </summary>
         </member>
-        <member name="P:HW.Host.API.Model.ModelEntity.HW_GuidePagesMenuInfo.MenuID">
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_GuidePagesMenuInfo.Id">
             <summary>
             Id
             </summary>
@@ -202,6 +212,126 @@
         <member name="P:HW.Host.API.Model.ModelEntity.HW_GuidePagesMenuInfo.MenuOrder">
             <summary>
             菜单排序
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo">
+            <summary>
+            手机型号详情
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo.PhoneName">
+            <summary>
+            手机型号
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo.PhoneRAM">
+            <summary>
+            手机内存
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo.PhonePrice">
+            <summary>
+            手机价格
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo.PhoneFineness">
+            <summary>
+            手机成色
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo.PhoneColour">
+            <summary>
+            手机颜色
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo.PhoneCode">
+            <summary>
+            手机串码
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo.PhoneLeaseTime">
+            <summary>
+            租凭时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo.PhoneIsReturn">
+            <summary>
+            是否归还（租赁归还）
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo.PhoneReturnTime">
+            <summary>
+            归还时间（租赁归还）
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo.PhoneRemarks">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo.PhoneReturnRemarks">
+            <summary>
+            手机归还备注
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Model.ModelEntity.HW_PhoneReceiveInfo">
+            <summary>
+            手机领取详情
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneReceiveInfo.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneReceiveInfo.ReceiveTime">
+            <summary>
+            领取时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneReceiveInfo.ReceiveUserID">
+            <summary>
+            领取员工ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneReceiveInfo.HW_Users">
+            <summary>
+            用户表关联
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneReceiveInfo.ReceivePhoneModelID">
+            <summary>
+            领取型号详情ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneReceiveInfo.HW_PhoneModelInfo">
+            <summary>
+            手机型号
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneReceiveInfo.ReceiveIsReturn">
+            <summary>
+            是否归还
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneReceiveInfo.ReceiveReturnTime">
+            <summary>
+            归还时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneReceiveInfo.ReceiveRemarks">
+            <summary>
+            领取备注
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_PhoneReceiveInfo.ReturnRemarks">
+            <summary>
+            归还备注
             </summary>
         </member>
         <member name="T:HW.Host.API.Model.Model.PageModel`1">

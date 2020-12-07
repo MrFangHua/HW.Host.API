@@ -34,6 +34,15 @@ FH.Host.API.Core</Description>
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="ExegesisXmlFile\HW.Host.API.Application.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ExegesisXmlFile\HW.Host.API.Core.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ExegesisXmlFile\HW.Host.API.Model.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="FH.Host.API.Core.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

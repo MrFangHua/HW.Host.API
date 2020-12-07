@@ -4,14 +4,16 @@ using HW.Host.API.Infrastructure.DB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HW.Host.API.Infrastructure.Migrations
 {
     [DbContext(typeof(HWHostDbContext))]
-    partial class HWHostDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201202063811_Update_Table_Id_All")]
+    partial class Update_Table_Id_All
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,10 +56,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                             AdminName = "Admin",
                             AdminPwd = "Admin123456",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 206, DateTimeKind.Local).AddTicks(8685),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 769, DateTimeKind.Local).AddTicks(9179),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(1041)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 771, DateTimeKind.Local).AddTicks(2995)
                         },
                         new
                         {
@@ -65,10 +67,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                             AdminName = "Mr.Fang",
                             AdminPwd = "Fh2269...",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(2188),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 771, DateTimeKind.Local).AddTicks(4917),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(2192)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 771, DateTimeKind.Local).AddTicks(4922)
                         });
                 });
 
@@ -105,10 +107,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 1,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(4570),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 771, DateTimeKind.Local).AddTicks(8292),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(4573),
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 771, DateTimeKind.Local).AddTicks(8295),
                             UserName = "Admin",
                             UserPwd = "Admin123456"
                         },
@@ -116,10 +118,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 2,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(5545),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(608),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(5547),
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(614),
                             UserName = "Mr.Fang",
                             UserPwd = "Fh2269..."
                         });
@@ -155,1000 +157,1000 @@ namespace HW.Host.API.Infrastructure.Migrations
                             Id = 1,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg1.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(7732),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(4139),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(7734)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(4143)
                         },
                         new
                         {
                             Id = 2,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg2.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8503),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5498),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8505)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5500)
                         },
                         new
                         {
                             Id = 3,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg3.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8533),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5537),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8534)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5537)
                         },
                         new
                         {
                             Id = 4,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg4.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8548),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5555),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8549)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5555)
                         },
                         new
                         {
                             Id = 5,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg5.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8561),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5569),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8561)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5569)
                         },
                         new
                         {
                             Id = 6,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg6.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8576),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5585),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8577)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5586)
                         },
                         new
                         {
                             Id = 7,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg7.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8590),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5601),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8591)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5602)
                         },
                         new
                         {
                             Id = 8,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg8.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8601),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5617),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8602)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5617)
                         },
                         new
                         {
                             Id = 9,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg9.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8612),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5630),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8613)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5631)
                         },
                         new
                         {
                             Id = 10,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg10.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8625),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5644),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8626)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5645)
                         },
                         new
                         {
                             Id = 11,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg11.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8637),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5659),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8638)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5660)
                         },
                         new
                         {
                             Id = 12,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg12.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8648),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5672),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8649)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5672)
                         },
                         new
                         {
                             Id = 13,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg13.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8725),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5686),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8726)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5686)
                         },
                         new
                         {
                             Id = 14,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg14.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8737),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5748),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8738)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5749)
                         },
                         new
                         {
                             Id = 15,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg15.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8748),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5761),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8749)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5762)
                         },
                         new
                         {
                             Id = 16,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg16.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8759),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5773),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8760)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5774)
                         },
                         new
                         {
                             Id = 17,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg17.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8771),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5786),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8771)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5786)
                         },
                         new
                         {
                             Id = 18,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg18.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8783),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5800),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8783)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5800)
                         },
                         new
                         {
                             Id = 19,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg19.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8794),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5812),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8795)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5813)
                         },
                         new
                         {
                             Id = 20,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg20.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8806),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5824),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8806)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5825)
                         },
                         new
                         {
                             Id = 21,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg21.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8817),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5837),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8817)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5837)
                         },
                         new
                         {
                             Id = 22,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg22.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8828),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5849),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8828)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5850)
                         },
                         new
                         {
                             Id = 23,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg23.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8839),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5862),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8840)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5862)
                         },
                         new
                         {
                             Id = 24,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg24.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8850),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5874),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8851)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5875)
                         },
                         new
                         {
                             Id = 25,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg25.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8861),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5886),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8862)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5887)
                         },
                         new
                         {
                             Id = 26,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg26.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8898),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5898),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8899)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5899)
                         },
                         new
                         {
                             Id = 27,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg27.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8910),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5941),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8910)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5942)
                         },
                         new
                         {
                             Id = 28,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg28.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8921),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5954),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8922)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5955)
                         },
                         new
                         {
                             Id = 29,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg29.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8932),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5967),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8933)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5967)
                         },
                         new
                         {
                             Id = 30,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg30.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8944),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5979),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8944)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5979)
                         },
                         new
                         {
                             Id = 31,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg31.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8954),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5991),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8955)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(5992)
                         },
                         new
                         {
                             Id = 32,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg32.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8965),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6003),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8966)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6004)
                         },
                         new
                         {
                             Id = 33,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg33.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8977),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6015),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8977)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6016)
                         },
                         new
                         {
                             Id = 34,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg34.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8989),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6030),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(8989)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6031)
                         },
                         new
                         {
                             Id = 35,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg35.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9000),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6042),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9000)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6043)
                         },
                         new
                         {
                             Id = 36,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg36.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9011),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6055),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9011)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6056)
                         },
                         new
                         {
                             Id = 37,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg37.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9022),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6068),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9022)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6069)
                         },
                         new
                         {
                             Id = 38,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg38.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9033),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6080),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9033)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6081)
                         },
                         new
                         {
                             Id = 39,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg39.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9069),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6093),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9070)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6093)
                         },
                         new
                         {
                             Id = 40,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg40.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9081),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6134),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9082)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6134)
                         },
                         new
                         {
                             Id = 41,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg41.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9092),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6148),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9093)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6149)
                         },
                         new
                         {
                             Id = 42,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg42.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9103),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6160),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9104)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6161)
                         },
                         new
                         {
                             Id = 43,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg43.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9114),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6173),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9115)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6173)
                         },
                         new
                         {
                             Id = 44,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg44.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9125),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6186),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9126)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6186)
                         },
                         new
                         {
                             Id = 45,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg45.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9136),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6199),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9137)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6200)
                         },
                         new
                         {
                             Id = 46,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg46.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9147),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6212),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9148)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6212)
                         },
                         new
                         {
                             Id = 47,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg47.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9158),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6224),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9159)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6225)
                         },
                         new
                         {
                             Id = 48,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg48.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9169),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6236),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9170)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6237)
                         },
                         new
                         {
                             Id = 49,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg49.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9180),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6249),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9181)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6249)
                         },
                         new
                         {
                             Id = 50,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg50.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9192),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6261),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9192)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6262)
                         },
                         new
                         {
                             Id = 51,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg51.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9202),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6274),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9203)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6274)
                         },
                         new
                         {
                             Id = 52,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg52.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9213),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6286),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9214)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6286)
                         },
                         new
                         {
                             Id = 53,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg53.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9250),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6298),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9251)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6299)
                         },
                         new
                         {
                             Id = 54,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg54.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9262),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6370),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9263)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6371)
                         },
                         new
                         {
                             Id = 55,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg55.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9273),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6386),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9274)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6386)
                         },
                         new
                         {
                             Id = 56,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg56.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9284),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6398),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9285)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6399)
                         },
                         new
                         {
                             Id = 57,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg57.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9295),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6411),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9296)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6411)
                         },
                         new
                         {
                             Id = 58,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg58.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9306),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6423),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9307)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6423)
                         },
                         new
                         {
                             Id = 59,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg59.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9317),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6435),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9318)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6436)
                         },
                         new
                         {
                             Id = 60,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg60.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9328),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6447),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9329)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6448)
                         },
                         new
                         {
                             Id = 61,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg61.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9339),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6459),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9340)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6460)
                         },
                         new
                         {
                             Id = 62,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg62.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9350),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6472),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9351)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6472)
                         },
                         new
                         {
                             Id = 63,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg63.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9361),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6484),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9362)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6485)
                         },
                         new
                         {
                             Id = 64,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg64.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9373),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6497),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9373)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6497)
                         },
                         new
                         {
                             Id = 65,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg65.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9383),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6509),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9384)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6509)
                         },
                         new
                         {
                             Id = 66,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg66.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9422),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6524),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9423)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6524)
                         },
                         new
                         {
                             Id = 67,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg67.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9433),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6568),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9434)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6568)
                         },
                         new
                         {
                             Id = 68,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg68.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9457),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6608),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9458)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6609)
                         },
                         new
                         {
                             Id = 69,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg69.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9469),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6621),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9469)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6622)
                         },
                         new
                         {
                             Id = 70,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg70.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9480),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6633),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9480)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6634)
                         },
                         new
                         {
                             Id = 71,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg71.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9491),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6646),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9491)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6646)
                         },
                         new
                         {
                             Id = 72,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg72.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9502),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6658),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9502)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6659)
                         },
                         new
                         {
                             Id = 73,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg73.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9513),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6671),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9514)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6671)
                         },
                         new
                         {
                             Id = 74,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg74.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9524),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6684),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9525)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6684)
                         },
                         new
                         {
                             Id = 75,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg75.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9536),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6696),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9536)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6697)
                         },
                         new
                         {
                             Id = 76,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg76.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9547),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6708),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9547)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6709)
                         },
                         new
                         {
                             Id = 77,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg77.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9558),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6720),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9558)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6721)
                         },
                         new
                         {
                             Id = 78,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg78.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9569),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6733),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9569)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6734)
                         },
                         new
                         {
                             Id = 79,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg79.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9580),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6745),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9580)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6746)
                         },
                         new
                         {
                             Id = 80,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg80.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9618),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6758),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9619)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6759)
                         },
                         new
                         {
                             Id = 81,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg81.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9629),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6862),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9630)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6862)
                         },
                         new
                         {
                             Id = 82,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg82.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9640),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6875),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9641)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6875)
                         },
                         new
                         {
                             Id = 83,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg83.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9651),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6887),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9652)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6888)
                         },
                         new
                         {
                             Id = 84,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg84.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9662),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6899),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9663)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6900)
                         },
                         new
                         {
                             Id = 85,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg85.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9673),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6912),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9674)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6912)
                         },
                         new
                         {
                             Id = 86,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg86.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9684),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6924),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9685)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6924)
                         },
                         new
                         {
                             Id = 87,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg87.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9696),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6936),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9696)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6937)
                         },
                         new
                         {
                             Id = 88,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg88.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9706),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6948),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9707)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6949)
                         },
                         new
                         {
                             Id = 89,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg89.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9717),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6960),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9718)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6961)
                         },
                         new
                         {
                             Id = 90,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg90.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9729),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6973),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9729)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6973)
                         },
                         new
                         {
                             Id = 91,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg91.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9740),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6985),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9740)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6985)
                         },
                         new
                         {
                             Id = 92,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg92.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9751),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6997),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9751)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(6998)
                         },
                         new
                         {
                             Id = 93,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg93.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9762),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7009),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9762)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7010)
                         },
                         new
                         {
                             Id = 94,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg94.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9799),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7021),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9800)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7022)
                         },
                         new
                         {
                             Id = 95,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg95.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9810),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7065),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9811)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7066)
                         },
                         new
                         {
                             Id = 96,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg96.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9821),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7078),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9822)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7079)
                         },
                         new
                         {
                             Id = 97,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg97.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9832),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7090),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9833)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7091)
                         },
                         new
                         {
                             Id = 98,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg98.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9843),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7102),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9844)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7103)
                         },
                         new
                         {
                             Id = 99,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg99.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9855),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7114),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9855)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7115)
                         },
                         new
                         {
                             Id = 100,
                             BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg100.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9888),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7164),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(9889)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(7164)
                         });
                 });
 
@@ -1184,70 +1186,70 @@ namespace HW.Host.API.Infrastructure.Migrations
                             Id = 1,
                             Content = "当你的能力还撑不起你的野心的时，你就需要静下心来 好好学习。",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6279),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(1868),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6281)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(1871)
                         },
                         new
                         {
                             Id = 2,
                             Content = "脏的人多了，干净反倒成了一种错。",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6791),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(2879),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6793)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(2881)
                         },
                         new
                         {
                             Id = 3,
                             Content = "你羡慕的生活都是你没熬过的苦。",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6801),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(2890),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6801)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(2890)
                         },
                         new
                         {
                             Id = 4,
                             Content = "所谓天才，只不过是把别人喝咖啡的功夫都用在了工作上了。",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6802),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(2893),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6803)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(2893)
                         },
                         new
                         {
                             Id = 5,
                             Content = "生活便是寻求新的知识。——门捷列夫",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6803),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(2944),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6804)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(2945)
                         },
                         new
                         {
                             Id = 6,
                             Content = "如果你浪费了自己的年龄，那是挺可悲的。因为你的青春只能持续一点儿时间——很短的一点儿时间。",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6805),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(2945),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6806)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(2946)
                         },
                         new
                         {
                             Id = 7,
                             Content = "世界上一成不变的东西，只有“任何事物都是在不断变化的”这条真理。",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6807),
+                            CreateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(2947),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 208, DateTimeKind.Local).AddTicks(6807)
+                            LastUpdateTime = new DateTime(2020, 12, 2, 14, 38, 10, 772, DateTimeKind.Local).AddTicks(2948)
                         });
                 });
 
@@ -1288,18 +1290,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CreateAdminID");
-
-                    b.Property<DateTime>("CreateTime");
-
-                    b.Property<int>("CreateUserID");
-
-                    b.Property<string>("DeleteTimeAndRemark");
-
-                    b.Property<int>("IsDeleted");
-
-                    b.Property<DateTime>("LastUpdateTime");
-
                     b.Property<string>("PhoneCode")
                         .IsRequired();
 
@@ -1335,11 +1325,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(368),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(370),
                             PhoneCode = "862754045574919",
                             PhoneColour = "红",
                             PhoneFineness = "95",
@@ -1353,11 +1338,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 2,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5399),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5402),
                             PhoneCode = "860450040094555",
                             PhoneColour = "黑",
                             PhoneFineness = "靓",
@@ -1371,11 +1351,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 3,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5449),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5450),
                             PhoneCode = "861189053704549",
                             PhoneColour = "蓝",
                             PhoneFineness = "靓",
@@ -1389,11 +1364,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 4,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5457),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5458),
                             PhoneCode = "866216030724606",
                             PhoneColour = "粉",
                             PhoneFineness = "靓",
@@ -1407,11 +1377,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 5,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5464),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5464),
                             PhoneCode = "868034039428685",
                             PhoneColour = "黑",
                             PhoneFineness = "9",
@@ -1425,11 +1390,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 6,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5469),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5470),
                             PhoneCode = "865043042963151",
                             PhoneColour = "蓝",
                             PhoneFineness = "9",
@@ -1443,11 +1403,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 7,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5475),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5475),
                             PhoneCode = "868577030922627",
                             PhoneColour = "黑",
                             PhoneFineness = "95",
@@ -1461,11 +1416,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 8,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5480),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5481),
                             PhoneCode = "864928040295179",
                             PhoneColour = "蓝",
                             PhoneFineness = "95",
@@ -1479,11 +1429,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 9,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5486),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5486),
                             PhoneCode = "862474042226765",
                             PhoneColour = "黑",
                             PhoneFineness = "靓",
@@ -1497,11 +1442,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 10,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5491),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5492),
                             PhoneCode = "860133058133412",
                             PhoneColour = "黑",
                             PhoneFineness = "靓",
@@ -1515,11 +1455,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 11,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5497),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5497),
                             PhoneCode = "861594045284619",
                             PhoneColour = "粉",
                             PhoneFineness = "靓",
@@ -1533,11 +1468,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 12,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5503),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5503),
                             PhoneCode = "99001343870346",
                             PhoneColour = "黑",
                             PhoneFineness = "95",
@@ -1551,11 +1481,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 13,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5508),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5509),
                             PhoneCode = "99001332374714",
                             PhoneColour = "蓝",
                             PhoneFineness = "9",
@@ -1569,11 +1494,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 14,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5514),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5514),
                             PhoneCode = "99001583306158",
                             PhoneColour = "白",
                             PhoneFineness = "靓",
@@ -1587,11 +1507,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 15,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5519),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(5520),
                             PhoneCode = "99001302146726",
                             PhoneColour = "白",
                             PhoneFineness = "靓",
@@ -1609,18 +1524,6 @@ namespace HW.Host.API.Infrastructure.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("CreateAdminID");
-
-                    b.Property<DateTime>("CreateTime");
-
-                    b.Property<int>("CreateUserID");
-
-                    b.Property<string>("DeleteTimeAndRemark");
-
-                    b.Property<int>("IsDeleted");
-
-                    b.Property<DateTime>("LastUpdateTime");
 
                     b.Property<int>("ReceiveIsReturn");
 
@@ -1648,46 +1551,31 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(6486),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(6487),
                             ReceiveIsReturn = 0,
                             ReceivePhoneModelID = 1,
                             ReceiveRemarks = "Hua.MrF测试~",
                             ReceiveReturnTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ReceiveTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(6484),
+                            ReceiveTime = new DateTime(2020, 12, 2, 14, 38, 10, 773, DateTimeKind.Local).AddTicks(9906),
                             ReceiveUserID = 2
                         },
                         new
                         {
                             Id = 2,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(7687),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(7688),
                             ReceiveIsReturn = 0,
                             ReceivePhoneModelID = 2,
                             ReceiveRemarks = "Hua.MrF测试~",
                             ReceiveReturnTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ReceiveTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(7685),
+                            ReceiveTime = new DateTime(2020, 12, 2, 14, 38, 10, 774, DateTimeKind.Local).AddTicks(1734),
                             ReceiveUserID = 2
                         },
                         new
                         {
                             Id = 3,
-                            CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(7740),
-                            CreateUserID = 0,
-                            IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(7740),
                             ReceiveIsReturn = 0,
                             ReceivePhoneModelID = 3,
                             ReceiveRemarks = "Hua.MrF测试~",
                             ReceiveReturnTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ReceiveTime = new DateTime(2020, 12, 7, 14, 25, 2, 209, DateTimeKind.Local).AddTicks(7739),
+                            ReceiveTime = new DateTime(2020, 12, 2, 14, 38, 10, 774, DateTimeKind.Local).AddTicks(1753),
                             ReceiveUserID = 2
                         });
                 });

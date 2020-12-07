@@ -1,5 +1,4 @@
-﻿using HW.Host.API.Infrastructure.DB;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace HW.Host.API.Infrastructure.DB
 {

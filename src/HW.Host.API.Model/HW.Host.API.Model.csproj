@@ -9,4 +9,8 @@
     <OutputPath>F:\File\Visual Studio Files\HW.Host.API\src\HW.Host.API.Core\bin\Debug\</OutputPath>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="sqlSugarCore" Version="5.0.1.4" />
+  </ItemGroup>
+
 </Project>

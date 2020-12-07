@@ -9,12 +9,11 @@
             管理员服务
             </summary>
         </member>
-        <member name="M:HW.Host.API.Application.Admin.AdminService.AdminLogin(System.String,System.String)">
+        <member name="M:HW.Host.API.Application.Admin.AdminService.AdminLogin(HW.Host.API.Application.Admin.Dto.AdminLoginDto)">
             <summary>
             管理员登录
             </summary>
-            <param name="adminName">管理员账号</param>
-            <param name="adminPwd">管理员密码</param>
+            <param name="adminLoginDto">管理员登陆实体类</param>
             <returns></returns>
         </member>
         <member name="M:HW.Host.API.Application.Admin.AdminService.SellectAll">
@@ -22,6 +21,46 @@
             查询所有Admin
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:HW.Host.API.Application.Admin.Dto.AdminLoginDto">
+            <summary>
+            管理员登陆
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.Admin.Dto.AdminLoginDto.AdminName">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.Admin.Dto.AdminLoginDto.AdminPwd">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.Admin.Dto.AdminLoginDto.AdminNameISNullOrEmpty">
+            <summary>
+            账号是否为空
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.Admin.Dto.AdminLoginDto.AdminPwdISNullOrEmpty">
+            <summary>
+            密码是否为空
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.Admin.Dto.AdminLoginDto.ISNullOrEmpty">
+            <summary>
+            账号和密码不能为空
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.Admin.Dto.AdminLoginResultDto">
+            <summary>
+            用户登录返回结果
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.Admin.Dto.AdminLoginResultDto.ISAdmin">
+            <summary>
+            是否为管理员
+            </summary>
         </member>
         <member name="T:HW.Host.API.Application.BackGroundImage.BackGroundImageInfoService">
             <summary>
@@ -60,12 +99,17 @@
             邮件内容
             </summary>
         </member>
+        <member name="P:HW.Host.API.Application.EmailHistory.Dto.createEmailHistoryInfoDto.IsSendEmail">
+            <summary>
+            是否发送邮件，默认为发送
+            </summary>
+        </member>
         <member name="T:HW.Host.API.Application.EmailHistory.Dto.EmailHistoryInfoDto">
             <summary>
             邮件历史信息类
             </summary>
         </member>
-        <member name="P:HW.Host.API.Application.EmailHistory.Dto.EmailHistoryInfoDto.EHID">
+        <member name="P:HW.Host.API.Application.EmailHistory.Dto.EmailHistoryInfoDto.Id">
             <summary>
             Id
             </summary>
@@ -135,7 +179,7 @@
             修改邮件历史信息类
             </summary>
         </member>
-        <member name="P:HW.Host.API.Application.EmailHistory.Dto.UpdateEmailHistoryInfoDto.EHID">
+        <member name="P:HW.Host.API.Application.EmailHistory.Dto.UpdateEmailHistoryInfoDto.Id">
             <summary>
             Id
             </summary>
@@ -177,7 +221,7 @@
             <param name="recipientId">收件人账号</param>
             <returns></returns>
         </member>
-        <member name="M:HW.Host.API.Application.EmailHistory.EmailHistoryInfoService.CreateEmailHistoryInfo(HW.Host.API.Application.EmailHistory.Dto.createEmailHistoryInfoDto,System.Nullable{System.Boolean})">
+        <member name="M:HW.Host.API.Application.EmailHistory.EmailHistoryInfoService.CreateEmailHistoryInfo(HW.Host.API.Application.EmailHistory.Dto.createEmailHistoryInfoDto)">
             <summary>
             添加邮件历史信息
             </summary>
@@ -217,6 +261,212 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.GetAllPhoneModelInfoResultDto.PhoneModelList">
+            <summary>
+            手机型号集合
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.PhoneModelInfo.Dto.GetAllPhoneModelResultDto">
+            <summary>
+            得到手机模型返回类
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.GetAllPhoneModelResultDto.PhoneModel">
+            <summary>
+            手机型号集合
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto">
+            <summary>
+            手机模型信息
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.PhoneName">
+            <summary>
+            手机型号
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.PhoneRAM">
+            <summary>
+            手机内存
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.PhonePrice">
+            <summary>
+            手机价格
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.PhoneFineness">
+            <summary>
+            手机成色
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.PhoneColour">
+            <summary>
+            手机颜色
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.PhoneCode">
+            <summary>
+            手机串码
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.PhoneLeaseTime">
+            <summary>
+            租凭时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.PhoneIsReturn">
+            <summary>
+            是否归还（租赁归还）
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.PhoneReturnTime">
+            <summary>
+            归还时间（租赁归还）
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.PhoneRemarks">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.PhoneReturnRemarks">
+            <summary>
+            手机归还备注
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.ReceiveTime">
+            <summary>
+            领取时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.ReceiveUserID">
+            <summary>
+            领取员工ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.ReceiveUserName">
+            <summary>
+            领取员工名称
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.ReceiveIsReturn">
+            <summary>
+            是否归还
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.ReceiveReturnTime">
+            <summary>
+            归还时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.ReceiveRemarks">
+            <summary>
+            领取备注
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto.ReturnRemarks">
+            <summary>
+            归还备注
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.PhoneModelInfo.PhoneModelInfoService">
+            <summary>
+            手机型号服务
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.PhoneModelInfo.PhoneModelInfoService.AddPhoneModel(HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo)">
+            <summary>
+            添加手机型号
+            </summary>
+            <param name="model">手机型号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HW.Host.API.Application.PhoneModelInfo.PhoneModelInfoService.GetAllPhoneModel(System.Int32)">
+            <summary>
+            根据手机型号Id得到手机型号详情
+            </summary>
+            <param name="PhoneId">手机型号Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:HW.Host.API.Application.PhoneModelInfo.PhoneModelInfoService.GetAllPhoneModelInfo">
+            <summary>
+            得到所有手机型号详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HW.Host.API.Application.PhoneReceiveInfo.Dto.GetAllPhoneReceiveInfoResultDto">
+            <summary>
+            得到所有手机领取详情返回类
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.GetAllPhoneReceiveInfoResultDto.PhoneReceiveInfoList">
+            <summary>
+            手机领取信息集合
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.PhoneReceiveInfo.Dto.GetAllPhoneReceiveInfoResultDto.PhoneReceiveInfo">
+            <summary>
+            手机领取信息
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.GetAllPhoneReceiveInfoResultDto.PhoneReceiveInfo.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.GetAllPhoneReceiveInfoResultDto.PhoneReceiveInfo.ReceiveTime">
+            <summary>
+            领取时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.GetAllPhoneReceiveInfoResultDto.PhoneReceiveInfo.ReceiveUserID">
+            <summary>
+            领取员工ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.GetAllPhoneReceiveInfoResultDto.PhoneReceiveInfo.ReceivePhoneModelID">
+            <summary>
+            领取型号详情ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.GetAllPhoneReceiveInfoResultDto.PhoneReceiveInfo.ReceiveIsReturn">
+            <summary>
+            是否归还
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.GetAllPhoneReceiveInfoResultDto.PhoneReceiveInfo.ReceiveReturnTime">
+            <summary>
+            归还时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.GetAllPhoneReceiveInfoResultDto.PhoneReceiveInfo.ReceiveRemarks">
+            <summary>
+            领取备注
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.GetAllPhoneReceiveInfoResultDto.PhoneReceiveInfo.ReturnRemarks">
+            <summary>
+            归还备注
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.PhoneReceiveInfo.PhoneReceiveInfoService">
+            <summary>
+            手机领取服务
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.PhoneReceiveInfo.PhoneReceiveInfoService.GetAllPhoneReceiveInfo">
+            <summary>
+            得到所有手机领取详情信息
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:HW.Host.API.Application.SqlLog.LogService">
             <summary>
             日志服务
@@ -230,6 +480,138 @@
         <member name="M:HW.Host.API.Application.SqlLog.SqlLogService.AddSqlLog(System.String)">
             <summary>
             添加Sql执行日志
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HW.Host.API.Application.User.Dto.GetAllUserNameResultDto">
+            <summary>
+            得到所有用户名称
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.User.Dto.GetAllUserNameResultDto.Id">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.User.Dto.GetAllUserNameResultDto.UserName">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.User.Dto.UpdateUserPwdDto">
+            <summary>
+            修改用户密码
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.User.Dto.UpdateUserPwdDto.UserName">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.User.Dto.UpdateUserPwdDto.UserOldPwd">
+            <summary>
+            旧密码
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.User.Dto.UpdateUserPwdDto.UserNewPwd">
+            <summary>
+            新密码
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.User.Dto.UpdateUserPwdDto.UserNameISNullOrEmpty">
+            <summary>
+            账号是否为空
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.User.Dto.UpdateUserPwdDto.UserPwdISNullOrEmpty">
+            <summary>
+            密码是否为空
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.User.Dto.UpdateUserPwdDto.UserNewPwdISNullOrEmpty">
+            <summary>
+            新密码是否为空
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.User.Dto.UpdateUserPwdDto.ISNullOrEmpty">
+            <summary>
+            账号和密码不能为空
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.User.Dto.UserLoginDto">
+            <summary>
+            用户登陆
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.User.Dto.UserLoginDto.UserName">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.User.Dto.UserLoginDto.UserPwd">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.User.Dto.UserLoginDto.SecurityCode">
+            <summary>
+            安全码
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.User.Dto.UserLoginDto.UserNameISNullOrEmpty">
+            <summary>
+            账号是否为空
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.User.Dto.UserLoginDto.UserPwdISNullOrEmpty">
+            <summary>
+            密码是否为空
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.User.Dto.UserLoginDto.SecurityCodeISNullOrEmpty">
+            <summary>
+            安全码是否为空
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.User.Dto.UserLoginDto.ISNullOrEmpty">
+            <summary>
+            账号和密码不能为空
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.User.Dto.UserLoginDto.CheckSecurityCode">
+            <summary>
+            判断安全码是否正确
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.User.UserService">
+            <summary>
+            用户服务
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.User.UserService.UserLogin(HW.Host.API.Application.User.Dto.UserLoginDto)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="userLoginDto">用户登陆实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:HW.Host.API.Application.User.UserService.AddUser(HW.Host.API.Application.User.Dto.UserLoginDto)">
+            <summary>
+            添加用户
+            </summary>
+            <param name="userLoginDto">用户登陆实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:HW.Host.API.Application.User.UserService.UpdateUserPwd(HW.Host.API.Application.User.Dto.UpdateUserPwdDto)">
+            <summary>
+            修改用户密码
+            </summary>
+            <param name="updateUserPwdDto">修改用户密码实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:HW.Host.API.Application.User.UserService.GetAllUserName">
+            <summary>
+            得到所有用户名称
             </summary>
             <returns></returns>
         </member>
