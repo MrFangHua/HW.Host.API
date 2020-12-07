@@ -1,5 +1,5 @@
-﻿using HW.Host.API.Infrastructure.Authorization.Jwt;
-using HW.Host.API.Infrastructure.Model;
+﻿using HW.Host.API.Application.Admin.Dto;
+using HW.Host.API.Infrastructure.Authorization.Jwt;
 using HW.Host.API.Infrastructure.SqlSugar;
 using HW.Host.API.Model.DefaultEntity;
 using Microsoft.AspNetCore.Authorization;
@@ -14,7 +14,7 @@ namespace HW.Host.API.Application.Admin
     /// 管理员服务
     /// </summary>
     [ApiExplorerSettings(GroupName = "HW.Host.Admin.API")]
-    [Route("api/[controller]")]
+    [Route("api/AdminService")]
     [ApiController]
     [Authorize]
     public class AdminService
@@ -29,23 +29,20 @@ namespace HW.Host.API.Application.Admin
         /// <summary>
         /// 管理员登录
         /// </summary>
-        /// <param name="adminName">管理员账号</param>
-        /// <param name="adminPwd">管理员密码</param>
+        /// <param name="adminLoginDto">管理员登陆实体类</param>
         /// <returns></returns>
         [HttpPost("AdminLogin")]
         [AllowAnonymous]
-        public async Task<ResultDto> AdminLogin(string adminName, string adminPwd)
+        public async Task<AdminLoginResultDto> AdminLogin(AdminLoginDto adminLoginDto)
         {
             // 判断是否为空
-            if (string.IsNullOrEmpty(adminName) || string.IsNullOrEmpty(adminPwd))
-                // 账号或密码不能为空
-                throw new Exception("Account or password cannot be empty.");
+            adminLoginDto.ISNullOrEmpty();
             var result = await _context
                 .GetFirstOrDefault(a =>
-                a.AdminName.Equals(adminName) &&
-                a.AdminPwd.Equals(adminPwd));
+                a.AdminName.Equals(adminLoginDto.AdminName) &&
+                a.AdminPwd.Equals(adminLoginDto.AdminPwd));
             if (result != null)
-                return new ResultDto() { ResultInfo = JwtService.GetToken(adminName) };
+                return new AdminLoginResultDto() { ResultInfo = "Bearer " + JwtService.GetToken(adminLoginDto.AdminName) };
             else
                 // 账号或密码错误
                 throw new Exception("Incorrect username or password.");
