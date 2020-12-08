@@ -54,7 +54,7 @@ namespace HW.Host.API.Model.ModelEntity
         /// 是否归还
         /// </summary>
         [Required]
-        public int ReceiveIsReturn { get; set; } = 0;
+        public int ReceiveIsReturn { get; set; } = 1;
 
         /// <summary>
         /// 归还时间

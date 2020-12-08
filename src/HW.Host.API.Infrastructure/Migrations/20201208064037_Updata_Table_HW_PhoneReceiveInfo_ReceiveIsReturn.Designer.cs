@@ -4,14 +4,16 @@ using HW.Host.API.Infrastructure.DB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HW.Host.API.Infrastructure.Migrations
 {
     [DbContext(typeof(HWHostDbContext))]
-    partial class HWHostDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201208064037_Updata_Table_HW_PhoneReceiveInfo_ReceiveIsReturn")]
+    partial class Updata_Table_HW_PhoneReceiveInfo_ReceiveIsReturn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
