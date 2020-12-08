@@ -42,7 +42,7 @@ namespace HW.Host.API.Application.Admin
                 a.AdminName.Equals(adminLoginDto.AdminName) &&
                 a.AdminPwd.Equals(adminLoginDto.AdminPwd));
             if (result != null)
-                return new AdminLoginResultDto() { ResultInfo = "Bearer " + JwtService.GetToken(adminLoginDto.AdminName) };
+                return new AdminLoginResultDto() { AdminId = result.Id, ResultInfo = "Bearer " + JwtService.GetToken(adminLoginDto.AdminName) };
             else
                 // 账号或密码错误
                 throw new Exception("Incorrect username or password.");

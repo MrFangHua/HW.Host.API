@@ -8,8 +8,8 @@ namespace HW.Host.API.Application.Admin.Dto
     public class AdminLoginResultDto : ResultDto
     {
         /// <summary>
-        /// 是否为管理员
+        /// 管理员Id
         /// </summary>
-        public int ISAdmin { get; set; } = 0;
+        public int AdminId { get; set; }
     }
 }

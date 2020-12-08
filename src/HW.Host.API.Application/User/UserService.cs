@@ -34,7 +34,7 @@ namespace HW.Host.API.Application.User
         /// <returns></returns>
         [HttpPost("UserLogin")]
         [AllowAnonymous]
-        public async Task<ResultDto> UserLogin(UserLoginDto userLoginDto)
+        public async Task<UserLoginResultDto> UserLogin(UserLoginDto userLoginDto)
         {
             // 判断是否为空
             userLoginDto.ISNullOrEmpty();
@@ -45,7 +45,7 @@ namespace HW.Host.API.Application.User
                 a.UserName.Equals(userLoginDto.UserName) &&
                 a.UserPwd.Equals(userLoginDto.UserPwd));
             if (result != null)
-                return new ResultDto() { ResultInfo = "Bearer " + JwtService.GetToken(userLoginDto.UserName) };
+                return new UserLoginResultDto() { UserId = result.Id, ResultInfo = "Bearer " + JwtService.GetToken(userLoginDto.UserName) };
             else
                 // 账号或密码错误
                 throw new Exception("Incorrect username or password.");
