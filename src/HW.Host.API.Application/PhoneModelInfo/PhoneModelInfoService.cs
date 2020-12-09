@@ -39,49 +39,6 @@ namespace HW.Host.API.Application.PhoneModelInfo
         }
 
         /// <summary>
-        /// 根据手机型号Id得到手机型号详情
-        /// </summary>
-        /// <param name="PhoneId">手机型号Id</param>
-        /// <returns></returns>
-        [HttpGet("GetAllPhoneModel")]
-        public async Task<GetAllPhoneModelResultDto> GetAllPhoneModel(int PhoneId)
-        {
-            var result = await _context.Db
-                .Queryable<HW_PhoneModelInfo, HW_PhoneReceiveInfo, HW_Users>(
-                (pm, pi, u) => new JoinQueryInfos(
-                    JoinType.Left, pm.Id == pi.ReceivePhoneModelID,
-                    JoinType.Left, pi.ReceiveUserID == u.Id))
-                .Where(pm => pm.Id == PhoneId)
-                .OrderBy((pm, pi) => pi.ReceiveTime, OrderByType.Desc)
-                .Select((pm, pi, u) => new PhoneModelInfoDto
-                {
-                    Id = pm.Id,
-                    PhoneName = pm.PhoneName,
-                    PhoneRAM = pm.PhoneRAM,
-                    PhonePrice = pm.PhonePrice,
-                    PhoneFineness = pm.PhoneFineness,
-                    PhoneColour = pm.PhoneColour,
-                    PhoneCode = pm.PhoneCode,
-                    PhoneLeaseTime = pm.PhoneLeaseTime.ToString("yyyy-MM-dd HH:mm:ss"),
-                    PhoneIsReturn = pm.PhoneIsReturn,
-                    PhoneReturnTime = pm.PhoneReturnTime.ToString("yyyy-MM-dd HH:mm:ss"),
-                    PhoneRemarks = pm.PhoneRemarks,
-                    PhoneReturnRemarks = pm.PhoneReturnRemarks,
-                    ReceiveTime = pi.ReceiveTime.ToString("yyyy-MM-dd HH:mm:ss"),
-                    ReceiveUserID = pi.ReceiveUserID,
-                    ReceiveUserName = u.UserName,
-                    ReceiveIsReturn = pi.ReceiveIsReturn,
-                    ReceiveReturnTime = pi.ReceiveReturnTime.ToString("yyyy-MM-dd HH:mm:ss"),
-                    ReceiveRemarks = pi.ReceiveRemarks,
-                    ReturnRemarks = pi.ReturnRemarks
-                }).FirstAsync();
-            return new GetAllPhoneModelResultDto()
-            {
-                PhoneModel = result
-            };
-        }
-
-        /// <summary>
         /// 得到所有手机型号详情
         /// </summary>
         /// <returns></returns>
@@ -93,6 +50,7 @@ namespace HW.Host.API.Application.PhoneModelInfo
                 (pm, pi, u) => new JoinQueryInfos(
                     JoinType.Left, pm.Id == pi.ReceivePhoneModelID,
                     JoinType.Left, pi.ReceiveUserID == u.Id))
+                .Where(pm => pm.IsDeleted == 0)
                 .OrderBy((pm, pi) => pi.ReceiveTime, OrderByType.Desc)
                 .Select((pm, pi, u) => new PhoneModelInfoDto
                 {
@@ -115,12 +73,50 @@ namespace HW.Host.API.Application.PhoneModelInfo
                     ReceiveReturnTime = pi.ReceiveReturnTime.ToString("yyyy-MM-dd HH:mm:ss"),
                     ReceiveRemarks = pi.ReceiveRemarks,
                     ReturnRemarks = pi.ReturnRemarks
-                }).ToListAsync();
+                })
+                .ToListAsync();
             // 重复Id分组，并且只取出每组的第一条
             var resultGB = result.GroupBy(groups => groups.Id)
                 .Select(groups => groups.FirstOrDefault())
                 .ToList();
             return new GetAllPhoneModelInfoResultDto()
+            {
+                PhoneModelList = resultGB
+            };
+        }
+
+        /// <summary>
+        /// 得到所有手机型号（领取手机）
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("GetAllPhoneModel")]
+        public async Task<GetAllPhoneModelResultDto> GetAllPhoneModel()
+        {
+            var result = await _context.Db
+                .Queryable<HW_PhoneModelInfo, HW_PhoneReceiveInfo>(
+                (pm, pi) => new JoinQueryInfos(JoinType.Left, pm.Id == pi.ReceivePhoneModelID))
+                .Where(pm => pm.IsDeleted == 0)
+                .Where((pm, pi) => pm.PhoneIsReturn == 0)
+                .OrderBy((pm, pi) => pi.ReceiveTime, OrderByType.Desc)
+                .Select((pm, pi) => new PhoneModelDto
+                {
+                    Id = pm.Id,
+                    PhoneName = pm.PhoneName,
+                    PhoneRAM = pm.PhoneRAM,
+                    PhonePrice = pm.PhonePrice,
+                    PhoneFineness = pm.PhoneFineness,
+                    PhoneColour = pm.PhoneColour,
+                    PhoneCode = pm.PhoneCode,
+                    ReceiveIsReturn = pi.ReceiveIsReturn,
+                    ReceiveReturnTime = pi.ReceiveReturnTime.ToString("yyyy-MM-dd HH:mm:ss"),
+                })
+                .ToListAsync();
+            // 重复Id分组，并且只取出每组的第一条
+            var resultGB = result.GroupBy(groups => groups.Id)
+                .Select(groups => groups.FirstOrDefault())
+                .OrderBy(orders => orders.Id)
+                .ToList();
+            return new GetAllPhoneModelResultDto()
             {
                 PhoneModelList = resultGB
             };
