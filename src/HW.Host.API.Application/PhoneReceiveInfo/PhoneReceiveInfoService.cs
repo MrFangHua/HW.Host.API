@@ -149,7 +149,7 @@ namespace HW.Host.API.Application.PhoneReceiveInfo
                 .OrderBy((pi, pm) => pi.ReceiveTime, OrderByType.Desc)
                 .Select((pi, pm, u) => new PhoneModelInfoDto
                 {
-                    Id = pm.Id,
+                    Id = pi.Id,
                     PhoneName = pm.PhoneName,
                     PhoneRAM = pm.PhoneRAM,
                     PhonePrice = pm.PhonePrice,
