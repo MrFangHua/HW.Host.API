@@ -57,9 +57,9 @@
             用户登录返回结果
             </summary>
         </member>
-        <member name="P:HW.Host.API.Application.Admin.Dto.AdminLoginResultDto.ISAdmin">
+        <member name="P:HW.Host.API.Application.Admin.Dto.AdminLoginResultDto.AdminId">
             <summary>
-            是否为管理员
+            管理员Id
             </summary>
         </member>
         <member name="T:HW.Host.API.Application.BackGroundImage.BackGroundImageInfoService">
@@ -268,12 +268,62 @@
         </member>
         <member name="T:HW.Host.API.Application.PhoneModelInfo.Dto.GetAllPhoneModelResultDto">
             <summary>
-            得到手机模型返回类
+            得到手机模型返回类（领取）
             </summary>
         </member>
-        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.GetAllPhoneModelResultDto.PhoneModel">
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.GetAllPhoneModelResultDto.PhoneModelList">
             <summary>
             手机型号集合
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelDto">
+            <summary>
+            手机模型（领取）
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelDto.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelDto.PhoneName">
+            <summary>
+            手机型号
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelDto.PhoneRAM">
+            <summary>
+            手机内存
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelDto.PhonePrice">
+            <summary>
+            手机价格
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelDto.PhoneFineness">
+            <summary>
+            手机成色
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelDto.PhoneColour">
+            <summary>
+            手机颜色
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelDto.PhoneCode">
+            <summary>
+            手机串码
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelDto.ReceiveIsReturn">
+            <summary>
+            是否归还
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelDto.ReceiveReturnTime">
+            <summary>
+            归还时间
             </summary>
         </member>
         <member name="T:HW.Host.API.Application.PhoneModelInfo.Dto.PhoneModelInfoDto">
@@ -388,18 +438,42 @@
             <param name="model">手机型号</param>
             <returns></returns>
         </member>
-        <member name="M:HW.Host.API.Application.PhoneModelInfo.PhoneModelInfoService.GetAllPhoneModel(System.Int32)">
-            <summary>
-            根据手机型号Id得到手机型号详情
-            </summary>
-            <param name="PhoneId">手机型号Id</param>
-            <returns></returns>
-        </member>
         <member name="M:HW.Host.API.Application.PhoneModelInfo.PhoneModelInfoService.GetAllPhoneModelInfo">
             <summary>
             得到所有手机型号详情
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:HW.Host.API.Application.PhoneModelInfo.PhoneModelInfoService.GetAllPhoneModel">
+            <summary>
+            得到所有手机型号（领取手机）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HW.Host.API.Application.PhoneReceiveInfo.Dto.AddPhoneReceiveInfoDto">
+            <summary>
+            添加手机领取信息实体类
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.AddPhoneReceiveInfoDto.ReceiveUserID">
+            <summary>
+            领取员工ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.AddPhoneReceiveInfoDto.ReceivePhoneModelID">
+            <summary>
+            领取型号详情ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.AddPhoneReceiveInfoDto.ReceiveIsReturn">
+            <summary>
+            是否归还
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.AddPhoneReceiveInfoDto.ReceiveRemarks">
+            <summary>
+            领取备注
+            </summary>
         </member>
         <member name="T:HW.Host.API.Application.PhoneReceiveInfo.Dto.GetAllPhoneReceiveInfoResultDto">
             <summary>
@@ -456,15 +530,62 @@
             归还备注
             </summary>
         </member>
+        <member name="T:HW.Host.API.Application.PhoneReceiveInfo.Dto.UpdatePhoneReceiveInfoDto">
+            <summary>
+            修改手机领取信息实体类
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.UpdatePhoneReceiveInfoDto.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.UpdatePhoneReceiveInfoDto.ReceiveIsReturn">
+            <summary>
+            是否归还
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.UpdatePhoneReceiveInfoDto.ReceiveReturnTime">
+            <summary>
+            归还时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.PhoneReceiveInfo.Dto.UpdatePhoneReceiveInfoDto.ReturnRemarks">
+            <summary>
+            归还备注
+            </summary>
+        </member>
         <member name="T:HW.Host.API.Application.PhoneReceiveInfo.PhoneReceiveInfoService">
             <summary>
             手机领取服务
             </summary>
         </member>
-        <member name="M:HW.Host.API.Application.PhoneReceiveInfo.PhoneReceiveInfoService.GetAllPhoneReceiveInfo">
+        <member name="M:HW.Host.API.Application.PhoneReceiveInfo.PhoneReceiveInfoService.GetPhoneModelReceiveInfoByPhoneId(System.Int32)">
             <summary>
-            得到所有手机领取详情信息
+            根据手机型号Id得到手机型号领取历史记录详情
             </summary>
+            <param name="PhoneId">手机型号Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:HW.Host.API.Application.PhoneReceiveInfo.PhoneReceiveInfoService.AddPhoneReceiveInfo(System.Collections.Generic.List{HW.Host.API.Application.PhoneReceiveInfo.Dto.AddPhoneReceiveInfoDto})">
+            <summary>
+            添加手机领取详情信息
+            </summary>
+            <param name="modelList">手机领取实体类集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:HW.Host.API.Application.PhoneReceiveInfo.PhoneReceiveInfoService.UpdatePhoneReceiveInfo(System.Collections.Generic.List{HW.Host.API.Application.PhoneReceiveInfo.Dto.UpdatePhoneReceiveInfoDto})">
+            <summary>
+            修改手机领取详情信息
+            </summary>
+            <param name="modelList">手机领取修改实体类集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:HW.Host.API.Application.PhoneReceiveInfo.PhoneReceiveInfoService.GetPhoneReceiveInfoByUserId(System.Int32)">
+            <summary>
+            根据用户Id得到手机领取信息
+            </summary>
+            <param name="UserId">用户Id</param>
             <returns></returns>
         </member>
         <member name="T:HW.Host.API.Application.SqlLog.LogService">
@@ -581,6 +702,16 @@
         <member name="M:HW.Host.API.Application.User.Dto.UserLoginDto.CheckSecurityCode">
             <summary>
             判断安全码是否正确
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.User.Dto.UserLoginResultDto">
+            <summary>
+            用户登录返回结果类
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.User.Dto.UserLoginResultDto.UserId">
+            <summary>
+            用户Id
             </summary>
         </member>
         <member name="T:HW.Host.API.Application.User.UserService">

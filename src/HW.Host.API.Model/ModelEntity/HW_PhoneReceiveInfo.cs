@@ -36,6 +36,7 @@ namespace HW.Host.API.Model.ModelEntity
         /// 用户表关联
         /// </summary>
         [ForeignKey("ReceiveUserID")]
+        [SugarColumn(IsIgnore = true)]
         public HW_Users HW_Users { get; set; }
 
         /// <summary>
@@ -48,6 +49,7 @@ namespace HW.Host.API.Model.ModelEntity
         /// 手机型号
         /// </summary>
         [ForeignKey("ReceivePhoneModelID")]
+        [SugarColumn(IsIgnore = true)]
         public HW_PhoneModelInfo HW_PhoneModelInfo { get; set; }
 
         /// <summary>
