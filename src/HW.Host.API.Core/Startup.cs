@@ -142,12 +142,22 @@ namespace HW.Host.API.Core
             services.AddCors(corsOption =>
             {
                 corsOption.AddPolicy("CustomCorsPolicy",
-                     CorsPolicyBuilder => CorsPolicyBuilder
-                    .AllowAnyOrigin() // 允许任何主机请求
-                    .AllowAnyMethod() // 允许任何请求方式
-                    .AllowAnyHeader() // 允许任何请求头
-                                      // .AllowCredentials() //指定处理cookie
-                    );
+                //CorsPolicyBuilder =>
+                //{
+                //    CorsPolicyBuilder.WithMethods("GET", "POST", "HEAD", "PUT", "DELETE", "OPTIONS")
+                //   .AllowAnyOrigin() // 允许任何主机请求
+                //   .AllowAnyMethod() // 允许任何请求方式
+                //   .AllowCredentials()
+                //   .AllowAnyHeader(); // 允许任何请求头
+                //                      // .AllowCredentials() //指定处理cookie
+                //    });
+                CorsPolicyBuilder =>
+                    CorsPolicyBuilder
+                   .AllowAnyOrigin() // 允许任何主机请求
+                   .AllowAnyMethod() // 允许任何请求方式
+                   .AllowAnyHeader() // 允许任何请求头
+                                     // .AllowCredentials() //指定处理cookie
+                );
             });
 
             // 添加Jwt验证
@@ -157,6 +167,7 @@ namespace HW.Host.API.Core
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(options =>
+
             {
                 options.TokenValidationParameters = new TokenValidationParameters()
                 {
