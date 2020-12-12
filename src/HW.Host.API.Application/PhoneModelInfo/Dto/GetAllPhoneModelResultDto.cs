@@ -64,6 +64,6 @@ namespace HW.Host.API.Application.PhoneModelInfo.Dto
         /// <summary>
         /// 归还时间
         /// </summary>
-        public string ReceiveReturnTime { get { return receiveReturnTime; } set { receiveReturnTime = value == "1-01-1 0:0:0" || value == "1753-01-1 0:0:0" ? "" : value; } }
+        public string ReceiveReturnTime { get { return receiveReturnTime; } set { receiveReturnTime = value == "1-01-1 0:0:0" || value == "1753-01-1 0:0:0" || value == "1900-01-1 0:0:0" ? "" : value; } }
     }
 }
