@@ -1,7 +1,4 @@
 ﻿using HW.Host.API.Infrastructure.Model;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace HW.Host.API.Application.User.Dto
 {

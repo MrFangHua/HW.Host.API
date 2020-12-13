@@ -588,6 +588,139 @@
             <param name="UserId">用户Id</param>
             <returns></returns>
         </member>
+        <member name="T:HW.Host.API.Application.ReportMealInfo.Dto.GetAllReportMealInfoByUserIdResultDto">
+            <summary>
+            根据员工Id得到所有的报餐信息返回结果
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.GetAllReportMealInfoByUserIdResultDto.ReportMealInfoList">
+            <summary>
+            当前员工的报餐信息
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.GetAllReportMealInfoByUserIdResultDto.Count">
+            <summary>
+            当前员工的报餐信息
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.ReportMealInfo.Dto.GetAllReportMealInfoResultDto">
+            <summary>
+            得到所有的报餐信息返回结果
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.GetAllReportMealInfoResultDto.NextReportMealInfoList">
+            <summary>
+            明天报餐信息
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.GetAllReportMealInfoResultDto.NextLunchCount">
+            <summary>
+            明天中餐人数
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.GetAllReportMealInfoResultDto.NextDinnerCount">
+            <summary>
+            明天晚餐人数
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.GetAllReportMealInfoResultDto.CurrentReportMealInfoList">
+            <summary>
+            当天报餐信息
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.GetAllReportMealInfoResultDto.CurrentLunchCount">
+            <summary>
+            当天中餐人数
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.GetAllReportMealInfoResultDto.CurrentDinnerCount">
+            <summary>
+            当天晚餐人数
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.ReportMealInfo.Dto.ReportMeal">
+            <summary>
+            报餐
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.ReportMeal.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.ReportMeal.ReportMealUserId">
+            <summary>
+            报餐员工Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.ReportMeal.ReportMealUserName">
+            <summary>
+            报餐员工Name
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.ReportMeal.ReportMealTime">
+            <summary>
+            报餐时间（年-月-日/1900-1-1）不带0的日期时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.ReportMeal.Lunch">
+            <summary>
+            中餐
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.ReportMeal.Dinner">
+            <summary>
+            晚餐
+            </summary>
+        </member>
+        <member name="F:HW.Host.API.Application.ReportMealInfo.Dto.ReportMeal.meal">
+             <summary>
+            餐详情
+             </summary>
+        </member>
+        <member name="P:HW.Host.API.Application.ReportMealInfo.Dto.ReportMeal.Meal">
+            <summary>
+            餐详情
+            </summary>
+        </member>
+        <member name="T:HW.Host.API.Application.ReportMealInfo.ReportMealInfoService">
+            <summary>
+            报餐信息服务
+            </summary>
+        </member>
+        <member name="M:HW.Host.API.Application.ReportMealInfo.ReportMealInfoService.GetAllReportMealInfoByUserId(System.Int32)">
+            <summary>
+            根据员工Id得到所有的报餐信息
+            </summary>
+            <param name="UserId">员工Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:HW.Host.API.Application.ReportMealInfo.ReportMealInfoService.GetAllReportMealInfo">
+            <summary>
+            得到所有的报餐信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HW.Host.API.Application.ReportMealInfo.ReportMealInfoService.AddReportMealInfo(System.Collections.Generic.List{HW.Host.API.Application.ReportMealInfo.Dto.ReportMeal})">
+            <summary>
+            添加报餐信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HW.Host.API.Application.ReportMealInfo.ReportMealInfoService.UpdateReportMealInfo(HW.Host.API.Application.ReportMealInfo.Dto.ReportMeal)">
+            <summary>
+            根据主键ID修改报餐信息
+            </summary>
+            <param name="model">报餐信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:HW.Host.API.Application.ReportMealInfo.ReportMealInfoService.DeleteReportMealInfo(System.Int32)">
+            <summary>
+            根据Id删除报餐信息
+            </summary>
+            <param name="Id">Id</param>
+            <returns></returns>
+        </member>
         <member name="T:HW.Host.API.Application.SqlLog.LogService">
             <summary>
             日志服务

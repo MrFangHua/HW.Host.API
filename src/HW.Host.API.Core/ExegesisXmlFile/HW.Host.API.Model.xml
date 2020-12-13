@@ -334,6 +334,41 @@
             归还备注
             </summary>
         </member>
+        <member name="T:HW.Host.API.Model.ModelEntity.HW_ReportMealInfo">
+            <summary>
+            报餐详情
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_ReportMealInfo.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_ReportMealInfo.ReportMealUserID">
+            <summary>
+            报餐员工ID
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_ReportMealInfo.HW_Users">
+            <summary>
+            用户表关联
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_ReportMealInfo.ReportMealTime">
+            <summary>
+            报餐时间（年-月-日/1900-1-1）不带0的日期时间
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_ReportMealInfo.Lunch">
+            <summary>
+            中餐
+            </summary>
+        </member>
+        <member name="P:HW.Host.API.Model.ModelEntity.HW_ReportMealInfo.Dinner">
+            <summary>
+            晚餐
+            </summary>
+        </member>
         <member name="T:HW.Host.API.Model.Model.PageModel`1">
             <summary>
             通用分页信息类
