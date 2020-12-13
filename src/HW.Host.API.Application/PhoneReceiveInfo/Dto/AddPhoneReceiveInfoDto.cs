@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace HW.Host.API.Application.PhoneReceiveInfo.Dto
+﻿namespace HW.Host.API.Application.PhoneReceiveInfo.Dto
 {
     /// <summary>
     /// 添加手机领取信息实体类
