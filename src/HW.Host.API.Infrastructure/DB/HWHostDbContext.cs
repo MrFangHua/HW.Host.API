@@ -96,11 +96,6 @@ namespace HW.Host.API.Infrastructure.DB
                 new HW_PhoneModelInfo { Id = 13, PhoneName = "小米9", PhoneRAM = "6+128", PhonePrice = 1150, PhoneFineness = "9", PhoneColour = "蓝", PhoneCode = "99001332374714", PhoneLeaseTime = DateTime.Parse("2020-11-29") },
                 new HW_PhoneModelInfo { Id = 14, PhoneName = "小米10青春版", PhoneRAM = "8+128", PhonePrice = 1700, PhoneFineness = "靓", PhoneColour = "白", PhoneCode = "99001583306158", PhoneLeaseTime = DateTime.Parse("2020-11-29") },
                 new HW_PhoneModelInfo { Id = 15, PhoneName = "红米K20Pro", PhoneRAM = "8+128", PhonePrice = 1450, PhoneFineness = "靓", PhoneColour = "白", PhoneCode = "99001302146726", PhoneLeaseTime = DateTime.Parse("2020-11-29") });
-
-            modelBuilder.Entity<HW_PhoneReceiveInfo>().HasData(
-                new HW_PhoneReceiveInfo { Id = 1, ReceiveUserID = 2, ReceivePhoneModelID = 1, ReceiveRemarks = "Hua.MrF测试~" },
-                new HW_PhoneReceiveInfo { Id = 2, ReceiveUserID = 2, ReceivePhoneModelID = 2, ReceiveRemarks = "Hua.MrF测试~" },
-                new HW_PhoneReceiveInfo { Id = 3, ReceiveUserID = 2, ReceivePhoneModelID = 3, ReceiveRemarks = "Hua.MrF测试~" });
         }
 
         public DbSet<HW_Admin> HW_Admin { get; set; }
@@ -116,5 +111,7 @@ namespace HW.Host.API.Infrastructure.DB
         public DbSet<HW_PhoneModelInfo> HW_PhoneModelInfo { get; set; }
 
         public DbSet<HW_PhoneReceiveInfo> HW_PhoneReceiveInfo { get; set; }
+
+        public DbSet<HW_ReportMealInfo> HW_ReportMealInfo { get; set; }
     }
 }
