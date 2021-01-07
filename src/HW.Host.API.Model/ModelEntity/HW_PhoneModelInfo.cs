@@ -16,7 +16,7 @@ namespace HW.Host.API.Model.ModelEntity
         [Key]
         [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [SugarColumn(IsPrimaryKey = true, IsIdentity = true)]
+        //[SugarColumn(IsPrimaryKey = true, IsIdentity = true)]
         public int Id { get; set; }
 
         /// <summary>

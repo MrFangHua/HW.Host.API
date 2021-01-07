@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>F:\File\Visual Studio Files\HW.Host.API\src\HW.Host.API.Core\ExegesisXmlFile\HW.Host.API.Application.xml</DocumentationFile>
-    <OutputPath>F:\File\Visual Studio Files\HW.Host.API\src\HW.Host.API.Core\bin\Debug\</OutputPath>
+    <DocumentationFile>..\HW.Host.API.Core\ExegesisXmlFile\HW.Host.API.Application.xml</DocumentationFile>
+    <OutputPath>..\HW.Host.API.Core\bin\Debug\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

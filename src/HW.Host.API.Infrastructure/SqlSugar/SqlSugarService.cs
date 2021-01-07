@@ -31,7 +31,8 @@ namespace HW.Host.API.Infrastructure.SqlSugar
                         DbType = DbType.SqlServer,
                         IsShardSameThread = true,
                         IsAutoCloseConnection = true,// 开启自动释放模式和EF原理一样我就不多解释了
-                        InitKeyType = InitKeyType.Attribute,// 从特性读取主键和自增列信息
+                        // InitKeyType = InitKeyType.Attribute,// 从特性读取主键和自增列信息
+                        InitKeyType = InitKeyType.SystemTable,// 从数据库读取主键和自增列信息
 
                         AopEvents = new AopEvents
                         {
@@ -59,7 +60,8 @@ namespace HW.Host.API.Infrastructure.SqlSugar
                         DbType = DbType.SqlServer,
                         IsShardSameThread = true,
                         IsAutoCloseConnection = true,// 开启自动释放模式和EF原理一样我就不多解释了
-                        InitKeyType = InitKeyType.Attribute,// 从特性读取主键和自增列信息
+                        // InitKeyType = InitKeyType.Attribute,// 从特性读取主键和自增列信息
+                        InitKeyType = InitKeyType.SystemTable,// 从数据库读取主键和自增列信息
 
                         AopEvents = new AopEvents
                         {

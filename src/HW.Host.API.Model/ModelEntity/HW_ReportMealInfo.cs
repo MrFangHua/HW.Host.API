@@ -16,7 +16,7 @@ namespace HW.Host.API.Model.ModelEntity
         [Key]
         [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [SugarColumn(IsPrimaryKey = true, IsIdentity = true)]
+        //[SugarColumn(IsPrimaryKey = true, IsIdentity = true)]
         public int Id { get; set; }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace HW.Host.API.Model.ModelEntity
         /// </summary>
         [ForeignKey("ReportMealUserID")]
         [SugarColumn(IsIgnore = true)]
-        public HW_Users HW_Users { get; set; }
+        public virtual HW_Users HW_Users { get; set; }
 
         /// <summary>
         /// 报餐时间（年-月-日/1900-1-1）不带0的日期时间

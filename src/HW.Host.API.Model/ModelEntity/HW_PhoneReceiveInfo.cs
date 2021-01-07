@@ -17,7 +17,7 @@ namespace HW.Host.API.Model.ModelEntity
         [Key]
         [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [SugarColumn(IsPrimaryKey = true, IsIdentity = true)]
+        //[SugarColumn(IsPrimaryKey = true, IsIdentity = true)]
         public int Id { get; set; }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace HW.Host.API.Model.ModelEntity
         /// </summary>
         [ForeignKey("ReceiveUserID")]
         [SugarColumn(IsIgnore = true)]
-        public HW_Users HW_Users { get; set; }
+        public virtual HW_Users HW_Users { get; set; }
 
         /// <summary>
         /// 领取型号详情ID
@@ -50,7 +50,7 @@ namespace HW.Host.API.Model.ModelEntity
         /// </summary>
         [ForeignKey("ReceivePhoneModelID")]
         [SugarColumn(IsIgnore = true)]
-        public HW_PhoneModelInfo HW_PhoneModelInfo { get; set; }
+        public virtual HW_PhoneModelInfo HW_PhoneModelInfo { get; set; }
 
         /// <summary>
         /// 是否归还

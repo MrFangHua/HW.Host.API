@@ -15,7 +15,7 @@ FH.Host.API.Core</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>F:\File\Visual Studio Files\HW.Host.API\src\HW.Host.API.Core\ExegesisXmlFile\HW.Host.API.Core.xml</DocumentationFile>
+    <DocumentationFile>G:\Visual Studio Files\HW.Host.API\src\HW.Host.API.Core\ExegesisXmlFile\HW.Host.API.Core.xml</DocumentationFile>
     <NoWarn>1701;1702;1591</NoWarn>
     <OutputPath></OutputPath>
   </PropertyGroup>

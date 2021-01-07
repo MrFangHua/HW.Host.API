@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HW.Host.API.Infrastructure.Migrations
 {
     [DbContext(typeof(HWHostDbContext))]
-    [Migration("20201213094441_Delete_Table_HW_ReportMealInfo")]
-    partial class Delete_Table_HW_ReportMealInfo
+    [Migration("20210107034701_Update_Model_Delete_SqlSugar")]
+    partial class Update_Model_Delete_SqlSugar
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -56,10 +56,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                             AdminName = "Admin",
                             AdminPwd = "Admin123456",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 165, DateTimeKind.Local).AddTicks(9928),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 189, DateTimeKind.Local).AddTicks(5222),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(3338)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 190, DateTimeKind.Local).AddTicks(9119)
                         },
                         new
                         {
@@ -67,10 +67,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                             AdminName = "Mr.Fang",
                             AdminPwd = "Fh2269...",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(4494),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(821),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(4496)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(823)
                         });
                 });
 
@@ -107,10 +107,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 1,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(7161),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(3354),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(7163),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(3357),
                             UserName = "Admin",
                             UserPwd = "Admin123456"
                         },
@@ -118,10 +118,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 2,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(8046),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(4747),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(8048),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(4749),
                             UserName = "Mr.Fang",
                             UserPwd = "Fh2269..."
                         });
@@ -155,1002 +155,1002 @@ namespace HW.Host.API.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg1.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg1.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(81),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(7324),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(82)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(7326)
                         },
                         new
                         {
                             Id = 2,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg2.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg2.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1429),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8492),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1432)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8493)
                         },
                         new
                         {
                             Id = 3,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg3.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg3.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1468),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8525),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1468)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8525)
                         },
                         new
                         {
                             Id = 4,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg4.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg4.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1572),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8539),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1573)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8540)
                         },
                         new
                         {
                             Id = 5,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg5.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg5.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1584),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8601),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1585)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8602)
                         },
                         new
                         {
                             Id = 6,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg6.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg6.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1599),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8619),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1599)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8620)
                         },
                         new
                         {
                             Id = 7,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg7.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg7.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1665),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8632),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1666)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8632)
                         },
                         new
                         {
                             Id = 8,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg8.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg8.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1677),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8644),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1678)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8644)
                         },
                         new
                         {
                             Id = 9,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg9.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg9.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1688),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8656),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1688)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8656)
                         },
                         new
                         {
                             Id = 10,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg10.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg10.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1700),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8669),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1701)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8669)
                         },
                         new
                         {
                             Id = 11,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg11.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg11.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1712),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8681),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1713)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8682)
                         },
                         new
                         {
                             Id = 12,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg12.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg12.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1723),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8694),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1724)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8694)
                         },
                         new
                         {
                             Id = 13,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg13.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg13.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1734),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8705),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1734)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8706)
                         },
                         new
                         {
                             Id = 14,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg14.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg14.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1745),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8717),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1745)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8718)
                         },
                         new
                         {
                             Id = 15,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg15.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg15.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1756),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8729),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1757)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8730)
                         },
                         new
                         {
                             Id = 16,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg16.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg16.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1767),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8741),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1767)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8741)
                         },
                         new
                         {
                             Id = 17,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg17.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg17.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1778),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8753),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1778)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8754)
                         },
                         new
                         {
                             Id = 18,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg18.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg18.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1790),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8793),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1790)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8794)
                         },
                         new
                         {
                             Id = 19,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg19.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg19.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1801),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8806),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1801)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8806)
                         },
                         new
                         {
                             Id = 20,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg20.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg20.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1841),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8817),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1841)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8818)
                         },
                         new
                         {
                             Id = 21,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg21.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg21.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1853),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8829),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1854)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8829)
                         },
                         new
                         {
                             Id = 22,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg22.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg22.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1864),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8841),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1865)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8841)
                         },
                         new
                         {
                             Id = 23,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg23.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg23.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1875),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8852),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1876)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8853)
                         },
                         new
                         {
                             Id = 24,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg24.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg24.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1886),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8864),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1886)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8864)
                         },
                         new
                         {
                             Id = 25,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg25.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg25.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1897),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8876),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1897)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8876)
                         },
                         new
                         {
                             Id = 26,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg26.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg26.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1908),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8887),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1908)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8888)
                         },
                         new
                         {
                             Id = 27,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg27.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg27.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1918),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8899),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1919)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8899)
                         },
                         new
                         {
                             Id = 28,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg28.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg28.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1930),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8910),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1931)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8911)
                         },
                         new
                         {
                             Id = 29,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg29.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg29.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1941),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8922),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1941)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8922)
                         },
                         new
                         {
                             Id = 30,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg30.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg30.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1952),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8933),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1952)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8934)
                         },
                         new
                         {
                             Id = 31,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg31.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg31.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1963),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8945),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1964)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(8945)
                         },
                         new
                         {
                             Id = 32,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg32.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg32.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1974),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9015),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1974)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9016)
                         },
                         new
                         {
                             Id = 33,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg33.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg33.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1984),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9027),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(1985)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9028)
                         },
                         new
                         {
                             Id = 34,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg34.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg34.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2026),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9040),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2027)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9040)
                         },
                         new
                         {
                             Id = 35,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg35.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg35.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2037),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9051),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2038)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9052)
                         },
                         new
                         {
                             Id = 36,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg36.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg36.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2048),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9063),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2049)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9063)
                         },
                         new
                         {
                             Id = 37,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg37.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg37.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2059),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9074),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2059)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9075)
                         },
                         new
                         {
                             Id = 38,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg38.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg38.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2158),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9086),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2158)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9087)
                         },
                         new
                         {
                             Id = 39,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg39.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg39.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2168),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9098),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2169)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9098)
                         },
                         new
                         {
                             Id = 40,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg40.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg40.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2178),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9110),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2179)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9110)
                         },
                         new
                         {
                             Id = 41,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg41.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg41.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2189),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9121),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2189)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9122)
                         },
                         new
                         {
                             Id = 42,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg42.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg42.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2199),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9133),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2200)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9133)
                         },
                         new
                         {
                             Id = 43,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg43.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg43.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2209),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9144),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2210)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9145)
                         },
                         new
                         {
                             Id = 44,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg44.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg44.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2219),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9156),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2220)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9156)
                         },
                         new
                         {
                             Id = 45,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg45.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg45.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2229),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9195),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2230)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9196)
                         },
                         new
                         {
                             Id = 46,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg46.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg46.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2239),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9207),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2240)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9208)
                         },
                         new
                         {
                             Id = 47,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg47.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg47.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2275),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9219),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2275)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9220)
                         },
                         new
                         {
                             Id = 48,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg48.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg48.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2286),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9231),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2287)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9231)
                         },
                         new
                         {
                             Id = 49,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg49.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg49.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2296),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9242),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2297)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9243)
                         },
                         new
                         {
                             Id = 50,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg50.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg50.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2306),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9254),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2307)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9254)
                         },
                         new
                         {
                             Id = 51,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg51.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg51.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2317),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9265),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2317)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9266)
                         },
                         new
                         {
                             Id = 52,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg52.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg52.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2327),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9277),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2327)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9278)
                         },
                         new
                         {
                             Id = 53,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg53.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg53.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2337),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9289),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2337)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9290)
                         },
                         new
                         {
                             Id = 54,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg54.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg54.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2347),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9301),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2347)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9301)
                         },
                         new
                         {
                             Id = 55,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg55.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg55.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2357),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9312),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2358)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9313)
                         },
                         new
                         {
                             Id = 56,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg56.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg56.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2368),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9324),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2368)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9324)
                         },
                         new
                         {
                             Id = 57,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg57.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg57.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2378),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9335),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2378)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9336)
                         },
                         new
                         {
                             Id = 58,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg58.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg58.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2388),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9375),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2388)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9375)
                         },
                         new
                         {
                             Id = 59,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg59.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg59.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2398),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9387),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2398)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9388)
                         },
                         new
                         {
                             Id = 60,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg60.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg60.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2408),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9399),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2409)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9399)
                         },
                         new
                         {
                             Id = 61,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg61.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg61.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2444),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9410),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2445)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9411)
                         },
                         new
                         {
                             Id = 62,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg62.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg62.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2456),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9422),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2456)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9422)
                         },
                         new
                         {
                             Id = 63,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg63.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg63.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2466),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9433),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2467)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9434)
                         },
                         new
                         {
                             Id = 64,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg64.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg64.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2476),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9445),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2477)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9445)
                         },
                         new
                         {
                             Id = 65,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg65.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg65.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2487),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9456),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2487)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9457)
                         },
                         new
                         {
                             Id = 66,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg66.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg66.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2498),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9482),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2499)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9483)
                         },
                         new
                         {
                             Id = 67,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg67.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg67.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2508),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9494),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2509)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9495)
                         },
                         new
                         {
                             Id = 68,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg68.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg68.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2532),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9506),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2532)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9506)
                         },
                         new
                         {
                             Id = 69,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg69.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg69.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2542),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9517),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2543)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9518)
                         },
                         new
                         {
                             Id = 70,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg70.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg70.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2553),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9577),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2553)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9578)
                         },
                         new
                         {
                             Id = 71,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg71.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg71.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2563),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9589),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2564)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9590)
                         },
                         new
                         {
                             Id = 72,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg72.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg72.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2573),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9600),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2574)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9601)
                         },
                         new
                         {
                             Id = 73,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg73.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg73.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2583),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9612),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2584)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9612)
                         },
                         new
                         {
                             Id = 74,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg74.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg74.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2620),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9624),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2620)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9624)
                         },
                         new
                         {
                             Id = 75,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg75.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg75.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2630),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9635),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2631)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9636)
                         },
                         new
                         {
                             Id = 76,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg76.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg76.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2641),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9647),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2641)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9647)
                         },
                         new
                         {
                             Id = 77,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg77.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg77.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2651),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9659),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2651)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9659)
                         },
                         new
                         {
                             Id = 78,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg78.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg78.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2661),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9670),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2661)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9671)
                         },
                         new
                         {
                             Id = 79,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg79.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg79.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2671),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9682),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2671)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9682)
                         },
                         new
                         {
                             Id = 80,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg80.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg80.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2681),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9693),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2682)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9694)
                         },
                         new
                         {
                             Id = 81,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg81.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg81.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2691),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9705),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2692)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9705)
                         },
                         new
                         {
                             Id = 82,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg82.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg82.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2702),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9717),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2702)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9717)
                         },
                         new
                         {
                             Id = 83,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg83.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg83.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2712),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9728),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2712)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9729)
                         },
                         new
                         {
                             Id = 84,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg84.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg84.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2722),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9784),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2722)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9785)
                         },
                         new
                         {
                             Id = 85,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg85.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg85.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2732),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9796),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2733)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9796)
                         },
                         new
                         {
                             Id = 86,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg86.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg86.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2743),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9807),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2743)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9808)
                         },
                         new
                         {
                             Id = 87,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg87.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg87.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2753),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9819),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2753)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9820)
                         },
                         new
                         {
                             Id = 88,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg88.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg88.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2823),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9831),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2823)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9831)
                         },
                         new
                         {
                             Id = 89,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg89.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg89.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2833),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9842),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2834)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9843)
                         },
                         new
                         {
                             Id = 90,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg90.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg90.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2844),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9854),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2844)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9854)
                         },
                         new
                         {
                             Id = 91,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg91.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg91.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2854),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9866),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2854)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9866)
                         },
                         new
                         {
                             Id = 92,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg92.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg92.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2864),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9877),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2865)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9878)
                         },
                         new
                         {
                             Id = 93,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg93.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg93.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2874),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9888),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2875)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9889)
                         },
                         new
                         {
                             Id = 94,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg94.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg94.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2884),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9900),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2885)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9901)
                         },
                         new
                         {
                             Id = 95,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg95.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg95.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2894),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9912),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2895)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9912)
                         },
                         new
                         {
                             Id = 96,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg96.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg96.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2905),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9923),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2905)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9924)
                         },
                         new
                         {
                             Id = 97,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg97.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg97.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2915),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9959),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2915)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9960)
                         },
                         new
                         {
                             Id = 98,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg98.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg98.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2925),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9972),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2925)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9972)
                         },
                         new
                         {
                             Id = 99,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg99.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg99.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2935),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9983),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2936)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(9984)
                         },
                         new
                         {
                             Id = 100,
-                            BGUrl = "http://192.168.6.88:8888/assets/images/backGround/bg100.jpg",
+                            BGUrl = "http://objstorage.fanghua.host//assets/images/backGround/bg100.jpg",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2969),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 192, DateTimeKind.Local).AddTicks(12),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(2969)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 192, DateTimeKind.Local).AddTicks(13)
                         });
                 });
 
@@ -1186,70 +1186,70 @@ namespace HW.Host.API.Infrastructure.Migrations
                             Id = 1,
                             Content = "当你的能力还撑不起你的野心的时，你就需要静下心来 好好学习。",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(8756),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(5599),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(8758)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(5600)
                         },
                         new
                         {
                             Id = 2,
                             Content = "脏的人多了，干净反倒成了一种错。",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(9387),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(6475),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(9389)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(6477)
                         },
                         new
                         {
                             Id = 3,
                             Content = "你羡慕的生活都是你没熬过的苦。",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(9396),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(6486),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(9397)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(6486)
                         },
                         new
                         {
                             Id = 4,
                             Content = "所谓天才，只不过是把别人喝咖啡的功夫都用在了工作上了。",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(9399),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(6488),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(9400)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(6488)
                         },
                         new
                         {
                             Id = 5,
                             Content = "生活便是寻求新的知识。——门捷列夫",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(9400),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(6489),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(9401)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(6490)
                         },
                         new
                         {
                             Id = 6,
                             Content = "如果你浪费了自己的年龄，那是挺可悲的。因为你的青春只能持续一点儿时间——很短的一点儿时间。",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(9402),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(6491),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(9403)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(6492)
                         },
                         new
                         {
                             Id = 7,
                             Content = "世界上一成不变的东西，只有“任何事物都是在不断变化的”这条真理。",
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(9404),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(6493),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 167, DateTimeKind.Local).AddTicks(9405)
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 191, DateTimeKind.Local).AddTicks(6494)
                         });
                 });
 
@@ -1338,10 +1338,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 1,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(3626),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 192, DateTimeKind.Local).AddTicks(640),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(3629),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 192, DateTimeKind.Local).AddTicks(642),
                             PhoneCode = "862754045574919",
                             PhoneColour = "红",
                             PhoneFineness = "95",
@@ -1356,10 +1356,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 2,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8902),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5259),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8905),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5262),
                             PhoneCode = "860450040094555",
                             PhoneColour = "黑",
                             PhoneFineness = "靓",
@@ -1374,10 +1374,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 3,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8955),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5311),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8955),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5311),
                             PhoneCode = "861189053704549",
                             PhoneColour = "蓝",
                             PhoneFineness = "靓",
@@ -1392,10 +1392,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 4,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8962),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5318),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8963),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5319),
                             PhoneCode = "866216030724606",
                             PhoneColour = "粉",
                             PhoneFineness = "靓",
@@ -1410,10 +1410,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 5,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8967),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5324),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8968),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5325),
                             PhoneCode = "868034039428685",
                             PhoneColour = "黑",
                             PhoneFineness = "9",
@@ -1428,10 +1428,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 6,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8972),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5329),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8973),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5330),
                             PhoneCode = "865043042963151",
                             PhoneColour = "蓝",
                             PhoneFineness = "9",
@@ -1446,10 +1446,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 7,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8977),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5335),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8978),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5335),
                             PhoneCode = "868577030922627",
                             PhoneColour = "黑",
                             PhoneFineness = "95",
@@ -1464,10 +1464,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 8,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8984),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5340),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8985),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5340),
                             PhoneCode = "864928040295179",
                             PhoneColour = "蓝",
                             PhoneFineness = "95",
@@ -1482,10 +1482,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 9,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8990),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5345),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8990),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5346),
                             PhoneCode = "862474042226765",
                             PhoneColour = "黑",
                             PhoneFineness = "靓",
@@ -1500,10 +1500,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 10,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8995),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5350),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(8995),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5351),
                             PhoneCode = "860133058133412",
                             PhoneColour = "黑",
                             PhoneFineness = "靓",
@@ -1518,10 +1518,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 11,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(9000),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5356),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(9001),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5356),
                             PhoneCode = "861594045284619",
                             PhoneColour = "粉",
                             PhoneFineness = "靓",
@@ -1536,10 +1536,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 12,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(9005),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5361),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(9006),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5362),
                             PhoneCode = "99001343870346",
                             PhoneColour = "黑",
                             PhoneFineness = "95",
@@ -1554,10 +1554,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 13,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(9010),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5366),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(9011),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5367),
                             PhoneCode = "99001332374714",
                             PhoneColour = "蓝",
                             PhoneFineness = "9",
@@ -1572,10 +1572,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 14,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(9015),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5372),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(9016),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5372),
                             PhoneCode = "99001583306158",
                             PhoneColour = "白",
                             PhoneFineness = "靓",
@@ -1590,10 +1590,10 @@ namespace HW.Host.API.Infrastructure.Migrations
                         {
                             Id = 15,
                             CreateAdminID = 0,
-                            CreateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(9020),
+                            CreateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5377),
                             CreateUserID = 0,
                             IsDeleted = 0,
-                            LastUpdateTime = new DateTime(2020, 12, 13, 17, 44, 41, 168, DateTimeKind.Local).AddTicks(9021),
+                            LastUpdateTime = new DateTime(2021, 1, 7, 11, 47, 1, 194, DateTimeKind.Local).AddTicks(5377),
                             PhoneCode = "99001302146726",
                             PhoneColour = "白",
                             PhoneFineness = "靓",
@@ -1647,6 +1647,40 @@ namespace HW.Host.API.Infrastructure.Migrations
                     b.ToTable("HW_PhoneReceiveInfo");
                 });
 
+            modelBuilder.Entity("HW.Host.API.Model.ModelEntity.HW_ReportMealInfo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CreateAdminID");
+
+                    b.Property<DateTime>("CreateTime");
+
+                    b.Property<int>("CreateUserID");
+
+                    b.Property<string>("DeleteTimeAndRemark");
+
+                    b.Property<int>("Dinner");
+
+                    b.Property<int>("IsDeleted");
+
+                    b.Property<DateTime>("LastUpdateTime");
+
+                    b.Property<int>("Lunch");
+
+                    b.Property<string>("ReportMealTime")
+                        .IsRequired();
+
+                    b.Property<int>("ReportMealUserID");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReportMealUserID");
+
+                    b.ToTable("HW_ReportMealInfo");
+                });
+
             modelBuilder.Entity("HW.Host.API.Model.ModelEntity.HW_PhoneReceiveInfo", b =>
                 {
                     b.HasOne("HW.Host.API.Model.ModelEntity.HW_PhoneModelInfo", "HW_PhoneModelInfo")
@@ -1657,6 +1691,14 @@ namespace HW.Host.API.Infrastructure.Migrations
                     b.HasOne("HW.Host.API.Model.DefaultEntity.HW_Users", "HW_Users")
                         .WithMany()
                         .HasForeignKey("ReceiveUserID")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("HW.Host.API.Model.ModelEntity.HW_ReportMealInfo", b =>
+                {
+                    b.HasOne("HW.Host.API.Model.DefaultEntity.HW_Users", "HW_Users")
+                        .WithMany()
+                        .HasForeignKey("ReportMealUserID")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
