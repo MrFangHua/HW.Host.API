@@ -4,14 +4,16 @@ using HW.Host.API.Infrastructure.DB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HW.Host.API.Infrastructure.Migrations
 {
     [DbContext(typeof(HWHostDbContext))]
-    partial class HWHostDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210112075705_Update_Table_HW_BackGroundImageInfo_BGUrl")]
+    partial class Update_Table_HW_BackGroundImageInfo_BGUrl
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
